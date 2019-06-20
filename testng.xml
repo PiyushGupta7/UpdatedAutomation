@@ -1,0 +1,10 @@
+<suite name="Automation Test Suite">
+ <test name="Test Cases">
+ 
+ <parameter name="nk" value="Sir"></parameter>
+ 
+ <classes>
+ <class name="com.crm.qa.testcases.LoginPageTest" />
+ </classes>
+ </test>
+</suite>
