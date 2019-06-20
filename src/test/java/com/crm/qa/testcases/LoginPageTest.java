@@ -126,7 +126,7 @@ public void webtable()
 		e.printStackTrace();
 	}
 	driver.findElement(By.xpath("//a[contains(text(),'Piyush Gupta')]/../..//td[1]//input[@type='checkbox']")).click();
-	
+	System.out.println("Bhaiya");
 }
 
 
