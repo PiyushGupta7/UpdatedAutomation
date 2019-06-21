@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\piyushgupta7\AppData\Local\Temp\testng-eclipse-1119857250\testng-customsuite.xml</span>
+                    <span>C:\Users\piyushgupta7\AppData\Local\Temp\testng-eclipse-1521203513\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,17 +128,15 @@
                   <a name="webtable">
                   </a> <!-- webtable -->
                   <span class="method-name">webtable</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=74.0.3729.157)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;intercom-borderless-dismiss-button&quot; aria-label=&quot;Dismiss&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt; is not clickable at point (334, 72). Other element would receive the click: &lt;div class=&quot;intercom-borderless-conversation-body intercom-borderless-conversation-body-visible-scrollbars&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.80)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;USBLRPIYUSHGUP6&apos;, ip: &apos;192.168.43.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\PIYUSH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 318bbaf6a006eb9c5fe90586a4a58506
-*** Element info: {Using=css selector, value=frame[name=&apos;intercom\-borderless\-frame&apos;],iframe[name=&apos;intercom\-borderless\-frame&apos;]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\PIYUSH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 7db5e1a128c7da6c9f5d4a6805a86c77
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -151,12 +149,9 @@ Session ID: 318bbaf6a006eb9c5fe90586a4a58506
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:878)
-	at com.crm.qa.testcases.LoginPageTest.setup(LoginPageTest.java:48)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.crm.qa.testcases.LoginPageTest.setup(LoginPageTest.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,7 +189,7 @@ Session ID: 318bbaf6a006eb9c5fe90586a4a58506
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\piyushgupta7\AppData\Local\Temp\testng-eclipse-1119857250\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\piyushgupta7\AppData\Local\Temp\testng-eclipse-1521203513\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -290,16 +285,16 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">webtable</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">webtable</span>
-                <span class="method-start">-1558434498658 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -39,7 +39,7 @@ public class LoginPageTest extends TestBase{
 		}
 	
 	@BeforeMethod
-	public void setup(){
+	public void setup() throws InterruptedException{
 		
 		initialisation();
 		lg=new LoginPage();
@@ -50,6 +50,7 @@ public class LoginPageTest extends TestBase{
 		Actions action=new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//div[@class='intercom-blocks']"))).build().perform();
 		driver.findElement(By.xpath("//div[@class='intercom-borderless-dismiss-button']")).click();
+		Thread.sleep(2000);
 		lg.HomePageLogin(prop.getProperty("username"),prop.getProperty("password"));
 		
 		
