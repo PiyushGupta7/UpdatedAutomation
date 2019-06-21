@@ -46,11 +46,13 @@ public class LoginPageTest extends TestBase{
 		hg=new HomePage();
 		tl=new TestUtil();
 		cp=new ContactsPage();
+		Thread.sleep(4000);
 		driver.switchTo().frame("intercom-borderless-frame");
 		Actions action=new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//div[@class='intercom-blocks']"))).build().perform();
-		driver.findElement(By.xpath("//div[@class='intercom-borderless-dismiss-button']")).click();
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='intercom-borderless-dismiss-button']")).click();
+		Thread.sleep(4000);
 		lg.HomePageLogin(prop.getProperty("username"),prop.getProperty("password"));
 		
 		
